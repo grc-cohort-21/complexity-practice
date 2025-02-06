@@ -58,6 +58,8 @@ public class Main {
 
   // The time complexity is:
   // YOUR ANSWER HERE
+  //O(n)
+  // n is the length of nums
   public static void describeProduct(int[] nums) {
     System.out.println("About to compute the product of the array...");
     int product = computeProduct(nums);
@@ -77,6 +79,8 @@ public class Main {
 
   // Assume that the largest number is no bigger than the length
   // of the array
+  //O(n)
+  // n is the length and values of nums
   public static void computeAllFactorials(int[] nums) {
     for(int num : nums) {
         int result = computeFactorial(num);
