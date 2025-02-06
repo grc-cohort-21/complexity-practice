@@ -199,10 +199,17 @@ public class Main {
   // Do not change the datatype of wordSet or wordList.
   // assume that each String is bounded by a constant length
   // What is the time complexity of your new solution?
-  // YOUR ANSWER HERE
+  // o(n)
   public static boolean hasCommonEfficient(HashSet<String> wordSet, ArrayList<String> wordList) {
+    
+    for(String word : wordList) {
+      if(wordSet.contains(word)) {
+        return true;
+      }
+    }
     return false;
-  }
+  } 
+
 
   // Suppose you are building a dashboard that displays real-time stock prices.
   // You want to keep track of the current price of each stock, with the stock's ticker symbol as the key.
