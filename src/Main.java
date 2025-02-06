@@ -176,6 +176,9 @@ public class Main {
   // What is the time complexity of your solution?
   // YOUR ANSWER HERE
   public static String emailLookupEfficient(HashMap<String, String> namesToEmails, String queryName) {
+    if(namesToEmails.containsKey(queryName)){
+      return namesToEmails.get(queryName);
+    }
     return "Person not found";
   }
 
