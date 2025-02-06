@@ -96,6 +96,8 @@ public class Main {
   // assume that each String is bounded by a constant length
   // The time complexity is:
   // YOUR ANSWER HERE
+  //O(n)
+  // contains is o(n) time complexity
   public static void checkIfContainedArrayList(ArrayList<String> arr, String target) {
     if (arr.contains(target)) {
         System.out.println(target + " is present in the list");
@@ -123,6 +125,8 @@ public class Main {
   // assume that each String is bounded by a constant length
   // The time complexity is:
   // YOUR ANSWER HERE
+  //O(N)
+  // .add is O(1) .contains is O(N) 
   public static boolean containsOverlap2(String[] wordsA, String[] wordsB) {
     Set<String> wordsSet = new HashSet<>();
     for(String word : wordsA) {
