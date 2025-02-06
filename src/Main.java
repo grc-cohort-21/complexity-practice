@@ -199,9 +199,14 @@ public class Main {
   // Do not change the datatype of wordSet or wordList.
   // assume that each String is bounded by a constant length
   // What is the time complexity of your new solution?
-  // YOUR ANSWER HERE
+  // O(n) since .contains for hashSet is complexity O(1)*O(n)for the for each loop
+  // where n is the number of items in the loop
   public static boolean hasCommonEfficient(HashSet<String> wordSet, ArrayList<String> wordList) {
-    
+    for(String word : wordList) {
+      if(wordSet.contains(word)) {
+        return true;
+      }
+    }
 
     return false;
   }
@@ -211,14 +216,14 @@ public class Main {
   // The prices will be updated frequently throughout the day, and you need to efficiently update
   // and access the current price for each stock. The order of the ticker symbols is not important.
   // What would be a good choice of data structure?
-  // YOUR ANSWER HERE
+  // HashMap because the values do not need to be in order, we need to save a key/value pair, and HashMaps are slightly faster to add/get
 
   // Suppose you are building a music player application where users can create playlists.
   // Songs can be added to the end of the playlist in the order the user chooses, and the user can
   // skip to the next or previous song. Most operations involve adding songs and accessing them by
   // their position in the playlist.
   // What would be a good choice of data structure?
-  // YOUR ANSWER HERE
+  // ArrayList because we can access the items by index, items can be added or removed from the list, and we don't need to define how long the list will be at the start
 
   // Suppose you are developing a search feature that keeps track of the user's
   // recent search queries. You want to store the queries in the order they were made,
@@ -226,5 +231,5 @@ public class Main {
   // relatively small, and it is more important to preserve the order of the searches than
   // to optimize for fast lookups or deletions.
   // What would be a good choice of data structure?
-  // YOUR ANSWER HERE
+  // TreeSet because the order IS important, but it has quick adds/removes and will be a small list
 }
