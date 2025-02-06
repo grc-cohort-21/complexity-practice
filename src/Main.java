@@ -51,7 +51,8 @@ public class Main {
   }
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n) where n is the number of items in array nums 
+  // (which is passed to the  (n) function computeProduct)
   public static void describeProduct(int[] nums) {
     System.out.println("About to compute the product of the array...");
     int product = computeProduct(nums);
@@ -60,7 +61,7 @@ public class Main {
 
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n) where n is the number of times the for loop will run
   public static int computeFactorial(int n) {
     int result = 1;
     for(int i = 1; i <= n; i++) {
@@ -71,10 +72,11 @@ public class Main {
 
   // Assume that the largest number is no bigger than the length
   // of the array
+  // O(n^2) (O(n)*O(n)) where n is the length of the nums array
   public static void computeAllFactorials(int[] nums) {
-    for(int num : nums) {
-        int result = computeFactorial(num);
-        System.out.println("The factorial of " + num + " is " + result);
+    for(int num : nums) { //O(n)
+        int result = computeFactorial(num); //O(n)
+        System.out.println("The factorial of " + num + " is " + result); //(1)
     }
   }
 
