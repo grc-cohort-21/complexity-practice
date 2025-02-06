@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class Main {
 
-  // The time complexity is:
+  // The time complexity is: n^2
   // YOUR ANSWER HERE
   public static void timesTable(int x) {
     for(int i = 1; i <= x; i++) {
@@ -16,7 +16,7 @@ public class Main {
     }
   }
 
-  // The time complexity is:
+  // The time complexity is: n
   // YOUR ANSWER HERE
   public static void printLetters(String word) {
     char[] letters = word.toCharArray();
@@ -26,7 +26,7 @@ public class Main {
     }
   }
 
-  // The time complexity is:
+  // The time complexity is: n
   // YOUR ANSWER HERE
   public static boolean isBanned(String password) {
     String[] bannedPasswords = {"password", "hello", "qwerty"};
@@ -40,7 +40,7 @@ public class Main {
   }
 
 
-  // The time complexity is:
+  // The time complexity is: n
   // YOUR ANSWER HERE
   public static int computeProduct(int[] nums) {
     int total = 1;
@@ -50,7 +50,7 @@ public class Main {
     return total;
   }
 
-  // The time complexity is:
+  // The time complexity is: n
   // YOUR ANSWER HERE
   public static void describeProduct(int[] nums) {
     System.out.println("About to compute the product of the array...");
@@ -59,7 +59,7 @@ public class Main {
   }
 
 
-  // The time complexity is:
+  // The time complexity is: n
   // YOUR ANSWER HERE
   public static int computeFactorial(int n) {
     int result = 1;
@@ -71,6 +71,7 @@ public class Main {
 
   // Assume that the largest number is no bigger than the length
   // of the array
+  // The time complexity is: n^2
   public static void computeAllFactorials(int[] nums) {
     for(int num : nums) {
         int result = computeFactorial(num);
@@ -80,7 +81,7 @@ public class Main {
 
 
   // assume that each String is bounded by a constant length
-  // The time complexity is:
+  // The time complexity is: n
   // YOUR ANSWER HERE
   public static void checkIfContainedArrayList(ArrayList<String> arr, String target) {
     if (arr.contains(target)) {
@@ -93,7 +94,7 @@ public class Main {
 
   // assume n = wordsA.length = wordsB.length
   // assume that each String is bounded by a constant length
-  // The time complexity is:
+  // The time complexity is: n^2
   // YOUR ANSWER HERE
   public static boolean containsOverlap(String[] wordsA, String[] wordsB) {
     for(String wordA : wordsA) {
@@ -107,7 +108,7 @@ public class Main {
   }
 
   // assume that each String is bounded by a constant length
-  // The time complexity is:
+  // The time complexity is: n
   // YOUR ANSWER HERE
   public static boolean containsOverlap2(String[] wordsA, String[] wordsB) {
     Set<String> wordsSet = new HashSet<>();
@@ -124,7 +125,7 @@ public class Main {
     return false;
   }
 
-  // The time complexity is:
+  // The time complexity is: n
   // YOUR ANSWER HERE
   public static void printCharacters(char[] chars) {
     for (int i = 0; i < chars.length; i++) {
@@ -132,14 +133,14 @@ public class Main {
       System.out.println("The character at index " + i + " is " + character);
     }
   }
-  // The time complexity is:
+  // The time complexity is: 1
   // YOUR ANSWER HERE
   public static double computeAverage(double a, double b) {
     return (a + b) / 2.0;
   }
 
   // assume that each String is bounded by a constant length
-  // The time complexity is:
+  // The time complexity is: 1
   // YOUR ANSWER HERE
   public static void checkIfContainedHashSet(HashSet<String> set, String target)
   {
@@ -157,6 +158,7 @@ public class Main {
   // assume that each String is bounded by a constant length
   // What is the time complexity of this method?
   // YOUR ANSWER HERE
+  // The time complexity is: n
   public static String emailLookup(String[] names, String[] emails, String queryName) {
     for(int i = 0; i < names.length; i++) {
       if (names[i].equals(queryName)) {
@@ -181,6 +183,7 @@ public class Main {
   // assume that each String is bounded by a constant length
   // (assume the set and list have the same number of elements)
   // YOUR ANSWER HERE
+  // The time complexity is: n
   public static boolean hasCommon(HashSet<String> wordSet, ArrayList<String> wordList) {
     for(String word : wordSet) {
       if(wordList.contains(word)) {
