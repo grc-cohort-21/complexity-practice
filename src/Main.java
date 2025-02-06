@@ -199,7 +199,7 @@ public class Main {
   // Do not change the datatype of wordSet or wordList.
   // assume that each String is bounded by a constant length
   // What is the time complexity of your new solution?
-  // YOUR ANSWER HERE
+  // O(n) where n=1(wordSet.contains)*for(String word: wordList)
   public static boolean hasCommonEfficient(HashSet<String> wordSet, ArrayList<String> wordList) {
     for (String word : wordList) {
       if (wordSet.contains(word)) {
@@ -221,7 +221,7 @@ public class Main {
   // skip to the next or previous song. Most operations involve adding songs and accessing them by
   // their position in the playlist.
   // What would be a good choice of data structure?
-  // YOUR ANSWER HERE
+  // TreeSet
 
   // Suppose you are developing a search feature that keeps track of the user's
   // recent search queries. You want to store the queries in the order they were made,
