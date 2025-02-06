@@ -109,6 +109,8 @@ public class Main {
   // assume that each String is bounded by a constant length
   // The time complexity is:
   // YOUR ANSWER HERE
+  // O(n^2)
+  // Where n is the length of arr words
   public static boolean containsOverlap(String[] wordsA, String[] wordsB) {
     for(String wordA : wordsA) {
         for(String wordB : wordsB) {
@@ -140,6 +142,8 @@ public class Main {
 
   // The time complexity is:
   // YOUR ANSWER HERE
+  // O(n)
+  // Where n is length of chars
   public static void printCharacters(char[] chars) {
     for (int i = 0; i < chars.length; i++) {
       char character = chars[i];
