@@ -219,5 +219,5 @@ public class Main {
   // relatively small, and it is more important to preserve the order of the searches than
   // to optimize for fast lookups or deletions.
   // What would be a good choice of data structure?
-  // ArrayList
+  // ArrayList 
 }
