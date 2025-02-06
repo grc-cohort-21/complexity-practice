@@ -176,7 +176,7 @@ public class Main {
   // What is the time complexity of your solution?
   // YOUR ANSWER HERE
   public static String emailLookupEfficient(HashMap<String, String> namesToEmails, String queryName) {
-    return null;
+    return "Person not found";
   }
 
   // What is the time complexity of this method?
