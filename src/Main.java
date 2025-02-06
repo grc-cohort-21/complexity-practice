@@ -83,7 +83,7 @@ public class Main {
 
   // assume that each String is bounded by a constant length
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n) because it is a list it has to go through every item
   public static void checkIfContainedArrayList(ArrayList<String> arr, String target) {
     if (arr.contains(target)) {
         System.out.println(target + " is present in the list");
@@ -96,7 +96,7 @@ public class Main {
   // assume n = wordsA.length = wordsB.length
   // assume that each String is bounded by a constant length
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n^2) each loop will operate O(n) times, so O(n)*O(n)=O(n^2)
   public static boolean containsOverlap(String[] wordsA, String[] wordsB) {
     for(String wordA : wordsA) {
         for(String wordB : wordsB) {
@@ -110,7 +110,7 @@ public class Main {
 
   // assume that each String is bounded by a constant length
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n) each loop will run O(n) times O(N)+O(n)=O(n)
   public static boolean containsOverlap2(String[] wordsA, String[] wordsB) {
     Set<String> wordsSet = new HashSet<>();
     for(String word : wordsA) {
@@ -127,7 +127,7 @@ public class Main {
   }
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n) where n is the number of characters in the array
   public static void printCharacters(char[] chars) {
     for (int i = 0; i < chars.length; i++) {
       char character = chars[i];
@@ -135,14 +135,14 @@ public class Main {
     }
   }
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(1) 
   public static double computeAverage(double a, double b) {
     return (a + b) / 2.0;
   }
 
   // assume that each String is bounded by a constant length
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(1) because contains for a hashset is O(1) and there is not a loop
   public static void checkIfContainedHashSet(HashSet<String> set, String target)
   {
     if (set.contains(target)) {
@@ -158,7 +158,7 @@ public class Main {
   // Otherwise, it returns "Person not found"
   // assume that each String is bounded by a constant length
   // What is the time complexity of this method?
-  // YOUR ANSWER HERE
+  // O(n) where n is the number of items in the names array
   public static String emailLookup(String[] names, String[] emails, String queryName) {
     for(int i = 0; i < names.length; i++) {
       if (names[i].equals(queryName)) {
