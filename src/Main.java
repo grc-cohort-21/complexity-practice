@@ -187,7 +187,7 @@ public class Main {
   // assume that each String is bounded by a constant length
   // (assume the set and list have the same number of elements)
   // YOUR ANSWER HERE
-  // The time complexity is: n
+  // The time complexity is: n^2
   public static boolean hasCommon(HashSet<String> wordSet, ArrayList<String> wordList) {
     for(String word : wordSet) {
       if(wordList.contains(word)) {
