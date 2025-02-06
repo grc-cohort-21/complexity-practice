@@ -32,6 +32,8 @@ public class Main {
 
   // The time complexity is:
   // YOUR ANSWER HERE
+  //O(n)
+  // n is the fixed elements within the banned passwords array
   public static boolean isBanned(String password) {
     String[] bannedPasswords = {"password", "hello", "qwerty"};
     boolean banned = false;
