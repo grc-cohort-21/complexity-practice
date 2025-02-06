@@ -48,6 +48,8 @@ public class Main {
 
   // The time complexity is:
   // YOUR ANSWER HERE
+  // O(n)
+  // Where n equals the length of nums
   public static int computeProduct(int[] nums) {
     int total = 1;
     for(int num : nums) {
@@ -67,6 +69,8 @@ public class Main {
 
   // The time complexity is:
   // YOUR ANSWER HERE
+  // O(n)
+  // Where n is the length
   public static int computeFactorial(int n) {
     int result = 1;
     for(int i = 1; i <= n; i++) {
