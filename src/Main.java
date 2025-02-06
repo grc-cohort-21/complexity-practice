@@ -175,6 +175,7 @@ public class Main {
   // assume that each String is bounded by a constant length
   // What is the time complexity of your solution?
   // YOUR ANSWER HERE
+  // The time complexity is: O(1)
   public static String emailLookupEfficient(HashMap<String, String> namesToEmails, String queryName) {
     if(namesToEmails.containsKey(queryName)){
       return namesToEmails.get(queryName);
