@@ -173,9 +173,14 @@ public class Main {
   // Write this method to efficiently return the corresponding email or "Person not found" if appropriate
   // assume that each String is bounded by a constant length
   // What is the time complexity of your solution?
-  // YOUR ANSWER HERE
+  // o(n)
   public static String emailLookupEfficient(HashMap<String, String> namesToEmails, String queryName) {
-    return null;
+    for(String name: namesToEmails.keySet()){
+      if(name.equals(queryName)){
+        return namesToEmails.get(name);
+      }
+    }
+    return "Person not found";
   }
 
   // What is the time complexity of this method?
