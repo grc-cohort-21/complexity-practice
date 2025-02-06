@@ -51,7 +51,7 @@ public class Main {
   }
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // o(1)
   public static void describeProduct(int[] nums) {
     System.out.println("About to compute the product of the array...");
     int product = computeProduct(nums);
