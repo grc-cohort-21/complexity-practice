@@ -7,6 +7,7 @@ public class Main {
 
   // The time complexity is:
   // O(n^2)
+  // n = x
   public static void timesTable(int x) {
     for(int i = 1; i <= x; i++) {
         for(int j = 1; j <= x; j++) {
@@ -18,6 +19,7 @@ public class Main {
 
   // The time complexity is:
   // O(n)
+  // n = letters in word
   public static void printLetters(String word) {
     char[] letters = word.toCharArray();
 
@@ -41,7 +43,8 @@ public class Main {
 
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n)
+  // n = length of nums
   public static int computeProduct(int[] nums) {
     int total = 1;
     for(int num : nums) {
@@ -51,7 +54,8 @@ public class Main {
   }
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n)
+  // n = length of nums
   public static void describeProduct(int[] nums) {
     System.out.println("About to compute the product of the array...");
     int product = computeProduct(nums);
@@ -60,7 +64,8 @@ public class Main {
 
 
   // The time complexity is:
-  // YOUR ANSWER HERE
+  // O(n)
+  // n = int n
   public static int computeFactorial(int n) {
     int result = 1;
     for(int i = 1; i <= n; i++) {
