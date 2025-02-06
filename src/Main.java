@@ -16,7 +16,7 @@ public class Main {
     }
   }
 
-  // The time complexity is:
+  // The time complexity is: o(n)
   // YOUR ANSWER HERE
   public static void printLetters(String word) {
     char[] letters = word.toCharArray();
@@ -40,7 +40,7 @@ public class Main {
   }
 
 
-  // The time complexity is:
+  // The time complexity is:o(n)
   // YOUR ANSWER HERE
   public static int computeProduct(int[] nums) {
     int total = 1;
