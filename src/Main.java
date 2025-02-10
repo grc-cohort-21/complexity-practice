@@ -250,12 +250,18 @@ public class Main {
   // What would be a good choice of data structure?
   // YOUR ANSWER HERE
 
+  //HashMap 
+  //The HashMap can store keys and values, making it easy to store the stocks and the ticker symbol.
+
   // Suppose you are building a music player application where users can create playlists.
   // Songs can be added to the end of the playlist in the order the user chooses, and the user can
   // skip to the next or previous song. Most operations involve adding songs and accessing them by
   // their position in the playlist.
   // What would be a good choice of data structure?
   // YOUR ANSWER HERE
+
+  //List
+  //The list can store and access by position. 
 
   // Suppose you are developing a search feature that keeps track of the user's
   // recent search queries. You want to store the queries in the order they were made,
@@ -264,4 +270,7 @@ public class Main {
   // to optimize for fast lookups or deletions.
   // What would be a good choice of data structure?
   // YOUR ANSWER HERE
+
+  //HashMap
+  //HashMap would allow for fast lookups and deletion with an O(1) time complexity.
 }
