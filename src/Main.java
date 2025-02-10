@@ -201,6 +201,8 @@ public class Main {
   // assume that each String is bounded by a constant length
   // What is the time complexity of your solution?
   // YOUR ANSWER HERE
+  // O(1) 
+  // get is an o(1) time complexity.
   public static String emailLookupEfficient(HashMap<String, String> namesToEmails, String queryName) {
     String result = namesToEmails.get(queryName);
 
@@ -215,6 +217,8 @@ public class Main {
   // assume that each String is bounded by a constant length
   // (assume the set and list have the same number of elements)
   // YOUR ANSWER HERE
+  // O(n^2)
+  // because wordSet and wordList are the same size the act as n * n
   public static boolean hasCommon(HashSet<String> wordSet, ArrayList<String> wordList) {
     for(String word : wordSet) {
       if(wordList.contains(word)) {
@@ -228,7 +232,14 @@ public class Main {
   // assume that each String is bounded by a constant length
   // What is the time complexity of your new solution?
   // YOUR ANSWER HERE
+  // O(n) 
+  // swap operations now .contains is O(1) and the total is O
   public static boolean hasCommonEfficient(HashSet<String> wordSet, ArrayList<String> wordList) {
+    for (String word : wordList) {
+      if (wordSet.contains(word)) {
+        return true;
+      }
+    }
     return false;
   }
 
