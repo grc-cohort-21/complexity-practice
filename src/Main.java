@@ -156,8 +156,8 @@ public class Main {
   }
   // The time complexity is:
   // YOUR ANSWER HERE
-  //O(1)
-  //Returns the same time complexity value everytime, because (a) and (b) will always be a constant value.
+   //O(1)
+ //Returns the same time complexity value everytime, because (a) and (b) will always be a constant value.
   public static double computeAverage(double a, double b) {
     return (a + b) / 2.0;
   }
@@ -165,8 +165,8 @@ public class Main {
   // assume that each String is bounded by a constant length
   // The time complexity is:
   // YOUR ANSWER HERE
-  //O(1)
-  //Because (.contains) returns a time complexity of O(1) and the target will always be a constant value, also a O(1) complexity
+   //O(1)
+ //Because (.contains) returns a time complexity of O(1) and the target will always be a constant value, also a O(1) complexity
   public static void checkIfContainedHashSet(HashSet<String> set, String target)
   {
     if (set.contains(target)) {
@@ -184,7 +184,7 @@ public class Main {
   // What is the time complexity of this method?
   // YOUR ANSWER HERE
   //O(n) 
-  //Because the size of how many names and emails can differ, causing the code to check each and every element, making it scale in size.
+//Because the size of how many names and emails can differ, causing the code to check each and every element, making it scale in size.
   public static String emailLookup(String[] names, String[] emails, String queryName) {
     for(int i = 0; i < names.length; i++) {
       if (names[i].equals(queryName)) {
@@ -202,10 +202,13 @@ public class Main {
   // What is the time complexity of your solution?
   // YOUR ANSWER HERE
   public static String emailLookupEfficient(HashMap<String, String> namesToEmails, String queryName) {
+    String result = namesToEmails.get(queryName);
+
+    if(result == null){
+      result = "Person not found.";
+    }
     
-
-
-    return null;
+    return result;
   }
 
   // What is the time complexity of this method?
